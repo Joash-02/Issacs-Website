@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function showMessage() {
+            alert("Thank You For Your Enquiry. We Will Respond To You ASAP!");
+        }
+    </script>
+
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #C3FFFB;
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            font-size: 20pt;
+            font-family: Garamond, serif;
+            border: 2px solid black;
+        }
+
+        .navbar img {
+            width: 60px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar .text {
+            font-weight: bold;
+        }
+
+        .navbar .line {
+            border-left: 3px solid black;
+            height: 47px;
+            width: 47px;
+            margin: 0 21px;
+        }
+
+        .navbar .links {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #C3FFFB;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 10px;
+            border-color: black;
+            font-family: Garamond, serif;
+            font-size: 25pt;
+            border: 2px solid black;
+        }
+
+        p {
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 15pt;
+        }
+
+        h3 {
+            font-family: Georgia, serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            margin: 0;
+        }
+
+        .contact-info h4 {
+            margin: 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid black;
+            margin: 15px 0;
+            padding: 10px;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            font-family: Georgia, serif;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-family: Georgia, serif;
+        }
+
+        select {
+            width: 108%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-family: Georgia, serif;
+        }
+
+        button {
+            display: block;
+            width: 111%;
+            padding: 20px;
+            background-color: #C3FFFB;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-family: Georgia, serif;
+            font-size: 15pt;
+            border: 2px solid black;
+        }
+
+        .footer {
+            background-color: #C3FFFB;
+            color: black;
+            padding: 20px;
+            align-items: center;
+            font-family: Georgia, serif;
+            border: 2px solid black;
+        }
+
+        .links {
+            flex: 2;
+            text-align: center;
+        }
+
+        .links a {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .logo {
+            flex: 1;
+            text-align: right;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="Homepage.html">
+            <img src="C:\Users\joash\OneDrive\Documents\Unuseful\Issac\Images\logo.png"
+                alt="Logo"><!--Change This Image-->
+        </a>
+        <span class="text" style="text-align: center;"><u>Climate <br> Emergency</span></u>
+        <div class="line"></div>
+        <div class="links">
+            <a href="Homepage.html">Climate <br> -- <br> Āhuarangi</a>
+            <a href="EffectsPage.html">Effects <br> -- <br> Whakapau Kaha</a>
+            <a href="SolutionsPage.html">Solutions <br> -- <br> Whakatika</a>
+            <a href="ContactUs.html">Contact Us <br> -- <br> Whakapā Atu Ki A Mātou</a>
+        </div>
+    </div>
+    <u>
+        <h1>Contact Us</h1>
+    </u>
+    <div class="container">
+        <div class="contact-info">
+            <p>We welcome your inquiries and engagement with our mission to address the urgent climate crisis. If you
+                have
+                questions, feedback, or ideas to share, please don't hesitate to reach out. Our dedicated team is here
+                to
+                listen, collaborate, and work together towards a sustainable and resilient future. Feel free to contact
+                us
+                through the provided channels, and let's make a positive impact on our planet. Together, we can make a
+                difference.</p>
+        </div>
+        <hr>
+        <div class="contact-info">
+            <u>
+                <h3>Phone Number:</h3>
+            </u>
+            <p>09-389-411
+            <p>
+        </div>
+        <hr>
+        <div class="contact-info">
+            <u>
+                <h3>Email Address:</h3>
+            </u>
+            <p>help@climate.emergency.co.nz</p>
+        </div>
+        <hr>
+        <div class="contact-info">
+            <u>
+                <h3>Mailing Address:</h3>
+            </u>
+            <p>102 Victoria Avenue <br> Auckland City <br> New Zealand</p>
+        </div>
+        <hr>
+
+        <form id="myForm">
+            <h3 style="text-align: center;">Get in touch by filling <br> <u>up the form below</u>:</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="type">Please Select Inquiry Type:</label>
+            <input type="text" id="type" name="type" required>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="null">- None -</option>
+                <option value="GI">General Inquiry</option>
+                <option value="Donation">Donation & Related Inquiries</option>
+                <option value="Education">Education Inquiries</option>
+                <option value="Others">Other</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="button" id="submitBtn" onclick="showMessage()">Submit</button>
+        </form>
+    </div>
+</body>
+
+<br>
+<br>
+
+<footer class="footer">
+    <div class="links">
+        <a href="https://rb.gy/v63bw">Terms and Conditions</a>
+        <a href="https://shorturl.at/zAFK6">Privacy Policy</a>
+        <a href="https://shorturl.at/vBFPX">Site Map</a>
+    </div>
+    <br>
+    <div class="copyright" style="text-align: center;">
+        &copy; 2023 Climate Emergency LTD. All rights reserved.
+    </div>
+</footer>
+
+</html>
